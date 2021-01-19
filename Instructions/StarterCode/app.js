@@ -1,14 +1,20 @@
-//Function to grab the data for my vizualizations
-function getPlot(id) {
-    
-  // get the data from the json file
-  d3.json("data/samples.json").then((data)=> {
-      console.log(data)
-     
-      var wfreq = data.metadata.map(d => d.wfreq)
-        console.log(`Washing Freq: ${wfreq}`)
+d3.json("./samples.json").then((data)=> {
+  console.log(data)
 
-        var samples = data.samples.filter(s => s.id.toString() === id)[0];
 
-  });
-} 
+//append ids to dropdown
+
+//id = "selDataset" (drop down menu id)
+
+//onchange function console.log(value)
+
+// conduct traces for bar charts here
+
+// var barchart with `sample_values` for bar data
+
+// Plotly.newPlot()
+
+
+
+});
+// always use liveserver when working
