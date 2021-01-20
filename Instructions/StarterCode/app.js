@@ -1,20 +1,17 @@
 d3.json("./samples.json").then((data)=> {
   console.log(data)
 
+var wfreq = data.metadata.map(d => d.wfreq)
+        console.log(`Washing Freq: ${wfreq}`)
+// id="selDataset"
+var samples = data.samples.filter(s => s.id.toString() === "selDataset")[0];
 
-//append ids to dropdown
+console.log(samples);
 
-//id = "selDataset" (drop down menu id)
 
-//onchange function console.log(value)
 
-// conduct traces for bar charts here
 
-// var barchart with `sample_values` for bar data
-
-// Plotly.newPlot()
 
 
 
 });
-// always use liveserver when working
